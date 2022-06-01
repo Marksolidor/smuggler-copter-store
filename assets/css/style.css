@@ -5,14 +5,10 @@ p{
     padding: 10px;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 nav{
     padding: 10px;
-    grid-area: menu;
+    grid-area: navbar;
     background: #0037a1;
     color:bisque;
 
@@ -42,21 +38,26 @@ footer{
 .layout{
     display: grid;
     border: 1px solid black;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 8fr 1 fr;
     grid-template-areas: 
-    "menu"
+    "navbar"
     "search"
     "main"
     "footer";
 }
 
-@media (min-width: 576px){
-    .grid-container{
+.grid-item2{
+    display: none;
+}
+
+@media (min-width: 992px){
+    .layout{
         grid-template-areas: 
-    "menu search main"
-    "menu search main"
-    "menu search main"
-    "menu footer";
+    "navbar search main"
+    "navbar search main"
+    "navbar search main"
+    "footer search main";
     grid-template-columns: 1fr 10fr;
+        display: flex; 
     }
 }
