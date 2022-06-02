@@ -1,0 +1,143 @@
+p{
+    color: aliceblue;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+nav{
+    padding: 1rem;
+    grid-area: navbar;
+    background: #0037a1;
+    color:bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    padding: 10px;
+    grid-area: search;
+    background: gray;
+
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background: royalblue;
+    color: beige;
+    padding: 10px;
+ 
+}
+
+.layout{
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 1fr 8fr 1 fr;
+    grid-template-areas: 
+    "navbar"
+    "search"
+    "main"
+    "footer";
+}
+
+h1{
+    font-family: fantasy;
+    font-weight: 200;
+}
+
+img{
+    max-width: 100%;
+}
+
+.dropdown{
+    text-align: center;
+}
+
+.dropdown-toggle{
+    width: 70%;
+    display: flex;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #749c2c;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h3{
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
+.grid-item2{
+    display: none;
+}
+
+/**pagination**/
+.pagination {
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+
+  .page2{
+      display: none;
+  }
+
+  /**footer**/
+  footer{
+    text-align: center;
+    margin-top: 2%;
+
+  }
+  
+  .logos{
+      max-width: 2rem;
+      
+  }
+
+@media (min-width: 992px){
+    .layout{
+        grid-template-areas: 
+    "navbar search main"
+    "navbar search main"
+    "navbar search main"
+    "footer search main";
+    grid-template-columns: 1fr 10fr;
+        display: flex; 
+    }
+}
