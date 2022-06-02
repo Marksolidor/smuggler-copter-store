@@ -5,11 +5,13 @@ p{
 }
 
 nav{
-    padding: 10px;
+    padding: 1rem;
     grid-area: navbar;
     background: #0037a1;
     color:bisque;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section{
@@ -40,6 +42,11 @@ footer{
     "search"
     "main"
     "footer";
+}
+
+h1{
+    font-family: fantasy;
+    font-weight: 200;
 }
 
 img{
@@ -92,6 +99,7 @@ h3{
     float: left;
     padding: 8px 16px;
     text-decoration: none;
+    font-size: 1em;
   }
   
   .pagination a.active {
@@ -113,6 +121,7 @@ h3{
   /**footer**/
   footer{
     text-align: center;
+    margin-top: 2%;
 
   }
   
