@@ -1,10 +1,8 @@
 p{
     color: aliceblue;
-    margin: 0px;
-    padding: 10px;
+    margin-bottom: 0 !important;
     text-align: center;
 }
-
 
 nav{
     padding: 10px;
@@ -72,6 +70,13 @@ img{
     margin: 1rem;
 }
 
+h3{
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
 .grid-item2{
     display: none;
 }
@@ -103,6 +108,17 @@ img{
 
   .page2{
       display: none;
+  }
+
+  /**footer**/
+  footer{
+    text-align: center;
+
+  }
+  
+  .logos{
+      max-width: 2rem;
+      
   }
 
 @media (min-width: 992px){
