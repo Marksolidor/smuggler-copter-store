@@ -63,6 +63,7 @@ img{
 .grid-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .grid-item1{
@@ -75,11 +76,20 @@ img{
     margin: 1rem;
 }
 
-h3{
-    padding: 0.5rem;
-    color: white;
-    text-align: center;
-    font-size: small;
+.grid-item2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #749c2c;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.cards{
+    font-size: 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .grid-item2{
@@ -139,11 +149,11 @@ h3{
     }
 
     main{
-        height: 100vh;
+        height: 150vh;
     }
 
     nav{
-        height: 85vh;
+        height: 135vh;
     }
 
     footer{
@@ -154,4 +164,17 @@ h3{
     .page2{
         display: unset;
     }
+
+    .grid-item1{
+        width: 20%;
+        height: 20%;
+    }
+
+    .grid-item2{
+        display: unset;
+        width: 20%;
+        height: 20%;
+    }
+
+    
 }
