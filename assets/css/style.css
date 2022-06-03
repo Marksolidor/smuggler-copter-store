@@ -30,7 +30,6 @@ footer{
     background: royalblue;
     color: beige;
     padding: 10px;
- 
 }
 
 .layout{
@@ -46,7 +45,6 @@ footer{
 
 h1{
     font-family: fantasy;
-    font-weight: 200;
 }
 
 img{
@@ -130,14 +128,26 @@ h3{
       
   }
 
-@media (min-width: 992px){
+@media (min-width: 576px){
     .layout{
         grid-template-areas: 
-    "navbar search main"
-    "navbar search main"
-    "navbar search main"
-    "footer search main";
-    grid-template-columns: 1fr 10fr;
-        display: flex; 
+    "navbar main main main"
+    "navbar main main main"
+    "navbar main main main"
+    "footer main main main";
+    grid-template-columns: 1fr 10fr; 
+    }
+
+    main{
+        height: 100vh;
+    }
+
+    nav{
+        height: 85vh;
+    }
+
+    footer{
+        height: 15vh;
+        margin:0;
     }
 }
