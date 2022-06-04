@@ -9,7 +9,7 @@ p {
 }
 
 .logo{
-    width: 100%;
+    width: 30%;
 }
 
 nav {
@@ -169,6 +169,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .logo{
+      width: 100%;
   }
 
 .navmenu{
