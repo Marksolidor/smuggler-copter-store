@@ -11,7 +11,7 @@ p {
 nav {
   padding: 1rem;
   grid-area: navbar;
-  background: #0037a1;
+  background: #082032;
   color: bisque;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ ul{
 section {
   padding: 10px;
   grid-area: search;
-  background: gray;
+  background: #334756;
 }
 
 main {
@@ -35,7 +35,7 @@ main {
 
 footer {
   grid-area: footer;
-  background: royalblue;
+  background: #334756;
   color: beige;
   padding: 10px;
 }
@@ -80,7 +80,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #749c2c;
+  background: #334756;
   padding: 1rem;
   margin: 1rem;
 }
@@ -90,7 +90,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #749c2c;
+  background: #334756;
   padding: 1rem;
   margin: 1rem;
 }
@@ -99,6 +99,10 @@ img {
   font-size: 1em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+}
+
+.btn{
+    background-color: #F0A500;
 }
 
 .grid-item2 {
@@ -120,7 +124,7 @@ img {
 }
 
 .pagination a.active {
-  background-color: #4caf50;
+  background-color: #F0A500;
   color: white;
   border-radius: 5px;
 }
