@@ -1,15 +1,11 @@
-p {
-  color: aliceblue;
-  margin-bottom: 0 !important;
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.navmenu{
-    display: none;
-}
-
-.logo{
-    width: 30%;
+/**Areas**/
+.navmenu {
+  display: none;
 }
 
 nav {
@@ -20,11 +16,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-ul{
-    list-style: none;
-    padding: 0 !important;
 }
 
 section {
@@ -49,20 +40,37 @@ footer {
 }
 
 .layout {
-  display: grid;
-  border: 1px solid black;
-  grid-template-rows: 1fr 1fr 8fr 1 fr;
-  grid-template-areas:
-    "navbar"
-    "search"
-    "main"
-    "footer";
-}
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 1fr 8fr 1 fr;
+    grid-template-areas:
+      "navbar"
+      "search"
+      "main"
+      "footer";
+  }
+  
+/**Header**/
+.logo {
+    width: 30%;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0 !important;
+  }
 
+p {
+    color: aliceblue;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+  
 img {
   max-width: 100%;
 }
 
+/**Search menu**/
 .dropdown {
   text-align: center;
 }
@@ -72,6 +80,7 @@ img {
   display: flex;
 }
 
+/**Main content**/
 .grid-container {
   display: flex;
   justify-content: center;
@@ -106,8 +115,8 @@ img {
   padding-bottom: 1rem;
 }
 
-.btn{
-    background-color: #F0A500;
+.btn {
+  background-color: #f0a500;
 }
 
 .grid-item2 {
@@ -130,7 +139,7 @@ img {
 }
 
 .pagination a.active {
-  background-color: #F0A500;
+  background-color: #f0a500;
   color: white;
   border-radius: 5px;
 }
@@ -153,6 +162,7 @@ footer {
   max-width: 2rem;
 }
 
+/**MEDIA QUERIES**/
 @media (min-width: 576px) {
   .layout {
     grid-template-areas:
@@ -170,13 +180,14 @@ footer {
     justify-content: flex-start;
   }
 
-  .logo{
-      width: 100%;
+  .logo {
+    width: 100%;
+    margin-bottom: 3rem;
   }
 
-.navmenu{
+  .navmenu {
     display: contents;
-}
+  }
 
   .fa-solid {
     display: none !important;
@@ -197,12 +208,11 @@ footer {
     justify-content: center;
   }
 
-  .pagination{
-      margin-bottom: 1rem;
+  .pagination {
+    margin-bottom: 1rem;
   }
 
   footer {
     margin: 0;
   }
-
 }
