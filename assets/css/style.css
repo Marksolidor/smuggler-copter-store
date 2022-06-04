@@ -87,6 +87,7 @@ img {
   background: #334756;
   padding: 1rem;
   margin: 1rem;
+  border-radius: 15px;
 }
 
 .grid-item2 {
@@ -97,6 +98,7 @@ img {
   background: #334756;
   padding: 1rem;
   margin: 1rem;
+  border-radius: 15px;
 }
 
 .cards {
