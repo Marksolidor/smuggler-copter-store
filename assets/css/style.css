@@ -35,6 +35,10 @@ section {
 
 main {
   grid-area: main;
+  background-image: url(../images/bg.jpg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
@@ -55,14 +59,9 @@ footer {
     "footer";
 }
 
-h1 {
-  font-family: fantasy;
-}
-
 img {
   max-width: 100%;
 }
-
 
 .dropdown {
   text-align: center;
@@ -119,10 +118,11 @@ img {
 .pagination {
   display: inline-block;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .pagination a {
-  color: black;
+  color: white;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
@@ -147,7 +147,6 @@ img {
 /**footer**/
 footer {
   text-align: center;
-  margin-top: 2%;
 }
 
 .logos {
